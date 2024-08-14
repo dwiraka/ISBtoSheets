@@ -25,5 +25,5 @@ jobs:
       run: node Tender_Selesai.js  # Replace with the path to your script
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
-        API_URL: ${{ secrets.API_URL_TS }}
+        API_URL_TS: ${{ secrets.API_URL_TS }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
