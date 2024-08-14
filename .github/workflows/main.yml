@@ -36,14 +36,14 @@ jobs:
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
 
     - name: Run Pencatatan Non Tender Node.js script
-      run: node NonTender_Selesai.js  # Replace with the path to your second script
+      run: node Pencatatan_NonTender.js  # Replace with the path to your second script
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_PNT: ${{ secrets.API_URL_PNT }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
 
     - name: Run Pencatatan Swakelola Node.js script
-      run: node NonTender_Selesai.js  # Replace with the path to your second script
+      run: node Pencatatan_Swakelola.js  # Replace with the path to your second script
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_PS: ${{ secrets.API_URL_PS }}
