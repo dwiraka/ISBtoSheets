@@ -2,16 +2,19 @@
 Import ISB LKPP JSON data to Google Sheets
 
 ## Requirements
-- Google Service Account with Google Sheets API enabled (the credential.json file)
-- Google Spreadsheets (It need the Spreadsheet ID to push the Data)
-- JSON Link from ISB LKPP
+- [Google Service Account](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Service%20Account.md) with Google Sheets API enabled (the `credentials.json` file).
+- [Google Spreadsheet](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Spreadsheets.md#how-to-get-the-spreadsheet-id) (You'll need the Spreadsheet ID to push the data).
+- JSON Link from ISB LKPP.
 
 ## Setup
-**1. Fork the Github**
 
-**2. Preparing the Google Sheets**
+### 1. Fork the GitHub Repository
 
-a. Make sheets with name:
+- Fork this repository to your GitHub account.
+
+### 2. Prepare the Google Sheets
+
+a. **Create Sheets with the Following Names:**
 ``` 
         - Tender
         - NonTender
@@ -20,29 +23,41 @@ a. Make sheets with name:
         - E-Purchasing
         - TokoDaring
 ```
-b. Give Google Service Account to be Editor in the Goggle Sheets
+b. **Add the Google Service Account as an Editor:**
+- Follow this [guide](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Spreadsheets.md#how-to-add-the-google-service-account-as-an-editor-in-google-spreadsheets) to grant editor access to your Google Service Account in the Google Sheets.
 
-**3. make Github Secrets**
-```
-Go to setting > Secrets and variables > Actions > New repository secret
-```
-***Required Secrets***
-- `GOOGLE_SHEET_KEY_JSON`: Fill it with the value inside credentials.json
-- `SPREADSHEET_ID`: Spreadsheets ID from the Google Sheets link
+### 3. Create GitHub Secrets
 
-***Customize Secret***
-- `API_URL_TS`: JSON link from SPSE-TenderSelesai 
-- `API_URL_TD`: JON link from Bela-TokoDaringRealisasi 
-- `API_URL_SWA`: JON link from RUP-PaketSwakelola-Terumumkan
-- `API_URL_PS`: JON link from SPSE-PencatatanSwakelola 
-- `API_URL_PNT`: JON link from SPSE-PencatatanNonTender 
-- `API_URL_PEN`: JON link from RUP-PaketPenyedia-Terumumkan
-- `API_URL_NTS`: JON link from SPSE-PencatatanNonTender 
-- `API_URL_EP`: JON link from Ecat-PaketEPurchasing 
+To securely store and use sensitive information, set up GitHub Secrets:
 
-**4. make Github Actions**
-```
-a. Go to Actions tab > 'I understand my workflows, go ahead and enable them' > 'Daily Node.js Script' > 'Enable workflow'
-```
- - Now you can run the Script Manually with `Run Workflow` or it will automatically run very mornign at 6
+- **Navigate to:** `Settings > Secrets and variables > Actions > New repository secret`
 
+#### **Required Secrets:**
+- `GOOGLE_SHEET_KEY_JSON`: Copy and paste the contents of your `credentials.json` file here.
+- `SPREADSHEET_ID`: The Spreadsheet ID from the Google Sheets link.
+
+#### **Optional Secrets for Customization:**
+- `API_URL_TS`: JSON link from SPSE-TenderSelesai.
+- `API_URL_TD`: JSON link from Bela-TokoDaringRealisasi.
+- `API_URL_SWA`: JSON link from RUP-PaketSwakelola-Terumumkan.
+- `API_URL_PS`: JSON link from SPSE-PencatatanSwakelola.
+- `API_URL_PNT`: JSON link from SPSE-PencatatanNonTender.
+- `API_URL_PEN`: JSON link from RUP-PaketPenyedia-Terumumkan.
+- `API_URL_NTS`: JSON link from SPSE-PencatatanNonTender.
+- `API_URL_EP`: JSON link from Ecat-PaketEPurchasing.
+
+### 4. Enable GitHub Actions
+
+a. **Set Up the Workflow:**
+- Go to the **Actions** tab.
+- Click on `'I understand my workflows, go ahead and enable them'`.
+- Select the `'Daily Node.js Script'` workflow.
+- Click `'Enable workflow'`.
+
+b. **Run the Workflow:**
+- You can manually trigger the workflow by clicking `'Run Workflow'`.
+- The workflow will also automatically run every morning at 6 AM.
+
+---
+
+Now you're all set! Your setup will automatically import ISB LKPP JSON data into the specified Google Sheets every day. You can also run the script manually whenever needed.
