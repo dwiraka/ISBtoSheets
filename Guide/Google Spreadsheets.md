@@ -20,6 +20,8 @@ When working with Google Sheets, you often need the Spreadsheet ID to interact w
      1SeTFM_Asd167ejmTpWM_Np19zbK0mI2rPBJfwN3L1wa4
 
 
+---
+
 # How to Add the Google Service Account as an Editor in Google Spreadsheets
 
 To allow your Google Service Account to interact with a Google Spreadsheet, you need to add it as an Editor. Here's how you can do it:
