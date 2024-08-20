@@ -2,7 +2,7 @@
 Import ISB LKPP JSON data to Google Sheets
 
 ## Requirements
-- Google Service Account (the credential.json file)
+- Google Service Account with Google Sheets API enabled (the credential.json file)
 - Google Spreadsheets (It need the Spreadsheet ID to push the Data)
 - JSON Link from ISB LKPP
 
