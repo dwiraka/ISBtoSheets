@@ -7,15 +7,25 @@ Import ISB LKPP JSON data to Google Sheets
 - JSON Link from ISB LKPP
 
 ## Setup
-**1. Fork the github**
+**1. Fork the Github**
 
-**2. make Githu Secrets**
+**2. Preparing the Google Sheets**
 
-    a. Go to setting
-    b. Secrets and variables
-    c. Actions
-    d. New repository secret
+a. Make sheets with name:
+``` 
+        - Tender
+        - NonTender
+        - Pen NonTender
+        - Pen Swakelola
+        - E-Purchasing
+        - TokoDaring
+```
+b. Give Google Service Account to be Editor in the Goggle Sheets
 
+**3. make Github Secrets**
+```
+Go to setting > Secrets and variables > Actions > New repository secret
+```
 ***Required Secrets***
 - `GOOGLE_SHEET_KEY_JSON`: Fill it with the value inside credentials.json
 - `SPREADSHEET_ID`: Spreadsheets ID from the Google Sheets link
@@ -29,4 +39,10 @@ Import ISB LKPP JSON data to Google Sheets
 - `API_URL_PEN`: JON link from RUP-PaketPenyedia-Terumumkan
 - `API_URL_NTS`: JON link from SPSE-PencatatanNonTender 
 - `API_URL_EP`: JON link from Ecat-PaketEPurchasing 
+
+**4. make Github Actions**
+```
+a. Go to Actions tab > 'I understand my workflows, go ahead and enable them' > 'Daily Node.js Script' > 'Enable workflow'
+```
+ - Now you can run the Script Manually with `Run Workflow` or it will automatically run very mornign at 6
 
