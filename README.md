@@ -3,7 +3,7 @@ Import ISB LKPP JSON data to Google Sheets
 
 ## Requirements
 - [Google Service Account](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Service%20Account.md) with Google Sheets API enabled (the `credentials.json` file).
-- [Google Sheets](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Spreadsheets.md#how-to-get-the-spreadsheet-id) (You'll need the Spreadsheet ID to push the data).
+- [Google Sheets](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Sheets.md) (You'll need the Spreadsheet ID to push the data).
 - JSON Link from ISB LKPP.
 
 ## Setup
@@ -24,7 +24,7 @@ a. **Create Sheets with the Following Names:**
         - TokoDaring
 ```
 b. **Add the Google Service Account as an Editor:**
-- Follow this [guide](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Spreadsheets.md#how-to-add-the-google-service-account-as-an-editor-in-google-spreadsheets) to grant editor access to your Google Service Account in the Google Sheets.
+- Follow this [guide](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Sheets.md#how-to-add-the-google-service-account-as-an-editor-in-google-sheets) to grant editor access to your Google Service Account in the Google Sheets.
 
 ### 3. Create GitHub Secrets
 
