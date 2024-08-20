@@ -22,9 +22,9 @@ When working with Google Sheets, you often need the Spreadsheet ID to interact w
 
 ---
 
-# How to Add the Google Service Account as an Editor in Google Spreadsheets
+# How to Add the Google Service Account as an Editor in Google Sheets
 
-To allow your Google Service Account to interact with a Google Spreadsheet, you need to add it as an Editor. Here's how you can do it:
+To allow your Google Service Account to interact with a Google Sheets, you need to add it as an Editor. Here's how you can do it:
 
 ## Step-by-Step Guide
 
@@ -32,7 +32,7 @@ To allow your Google Service Account to interact with a Google Spreadsheet, you 
    - If you haven't created a service account yet, follow the steps [[here]](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Service%20Account.md).
    - The service account email typically looks something like `your-service-account@your-project-id.iam.gserviceaccount.com`.
 
-2. **Open the Google Spreadsheet**:
+2. **Open the Google Sheets**:
    - Go to [Google Sheets](https://docs.google.com/spreadsheets/) and open the spreadsheet you want to share.
 
 3. **Open the Sharing Settings**:
