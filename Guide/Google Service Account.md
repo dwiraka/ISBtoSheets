@@ -1,30 +1,30 @@
-# How to Create a `credentials.json` for a Google Service Account
+# Cara Membuat `credentials.json` untuk Google Service Account
 
-Follow these steps to create a `credentials.json` file, which you can use to authenticate your application with Google APIs.
+Ikuti langkah-langkah berikut untuk membuat file `credentials.json`, yang dapat Anda gunakan untuk mengautentikasi aplikasi Anda dengan Google API.
 
-## 1. Go to the Google Cloud Console
-- Visit the [Google Cloud Console](https://console.cloud.google.com/).
+## 1. Buka Google Cloud Console
+- Kunjungi [Google Cloud Console](https://console.cloud.google.com/).
 
-## 2. Create a New Project or Select an Existing One
-- **New Project**: Click the project dropdown at the top and select **New Project**. Give it a name, and click **Create**.
-- **Existing Project**: Select your project from the dropdown.
+## 2. Buat Proyek Baru atau Pilih Proyek yang Sudah Ada
+- **Proyek Baru**: Klik dropdown proyek di bagian atas dan pilih **Proyek Baru**. Beri nama, lalu klik **Buat**.
+- **Proyek yang Sudah Ada**: Pilih proyek Anda dari dropdown.
 
-## 3. Enable the Required API
-- Navigate to the **APIs & Services** section from the left-hand menu.
-- Click on **Library** and search for the API you need (e.g., Google Sheets API, Google Drive API).
-- Click on the API, then click **Enable**.
+## 3. Aktifkan API yang Dibutuhkan
+- Navigasikan ke bagian **APIs & Services** dari menu di sebelah kiri.
+- Klik **Library** dan cari API yang Anda butuhkan (misalnya, Google Sheets API, Google Drive API).
+- Klik pada API tersebut, lalu klik **Enable**.
 
-## 4. Create a Service Account
-- In the **APIs & Services** section, click on **Credentials**.
-- Click the **Create Credentials** button and select **Service account**.
-- Provide a name for the service account and an optional description.
-- Click **Create and Continue**.
-- If necessary, assign roles or permissions; otherwise, click **Done**.
+## 4. Buat Service Account
+- Di bagian **APIs & Services**, klik **Credentials**.
+- Klik tombol **Create Credentials** dan pilih **Service account**.
+- Berikan nama untuk service account dan deskripsi opsional.
+- Klik **Create and Continue**.
+- Jika diperlukan, tetapkan peran atau izin; jika tidak, klik **Done**.
 
-## 5. Create a Key for the Service Account
-- In the **APIs & Services** section, find your newly created service account under **Service Accounts**.
-- Click on the service account name.
-- Go to the **Keys** tab.
-- Click on **Add Key** and select **Create new key**.
-- Choose the key type as **JSON** and click **Create**.
-- A `credentials.json` file will be downloaded to your computer.
+## 5. Buat Kunci untuk Service Account
+- Di bagian **APIs & Services**, temukan service account yang baru saja Anda buat di bawah **Service Accounts**.
+- Klik pada nama service account tersebut.
+- Buka tab **Keys**.
+- Klik **Add Key** dan pilih **Create new key**.
+- Pilih tipe kunci sebagai **JSON** dan klik **Create**.
+- Sebuah file `credentials.json` akan diunduh ke komputer Anda.
