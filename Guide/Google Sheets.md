@@ -1,46 +1,46 @@
-# How to Get the Spreadsheet ID
-When working with Google Sheets, you often need the Spreadsheet ID to interact with the API. The Spreadsheet ID is a unique identifier found in the URL of the Google Sheet.
+# Cara Mendapatkan Spreadsheet ID
+Saat bekerja dengan Google Sheets, Anda sering memerlukan Spreadsheet ID untuk berinteraksi dengan API. Spreadsheet ID adalah pengenal unik yang terdapat dalam URL Google Sheet.
 
-## Step-by-Step Guide
+## Panduan Langkah demi Langkah
 
-1. **Open Your Google Sheet**:
-   - Go to [Google Sheets](https://docs.google.com/spreadsheets/) and open the spreadsheet you want to work with.
+1. **Buka Google Sheet Anda**:
+   - Buka [Google Sheets](https://docs.google.com/spreadsheets/) dan buka spreadsheet yang ingin Anda gunakan.
 
-2. **Locate the Spreadsheet ID**:
-   - Look at the URL in your browser's address bar.
-   - The URL should look something like this:
+2. **Temukan Spreadsheet ID**:
+   - Lihat URL di bilah alamat browser Anda.
+   - URL-nya akan terlihat seperti ini:
      ```
      https://docs.google.com/spreadsheets/d/1SeTFM_Asd167ejmTpWM_Np19zbK0mI2rPBJfwN3L1wa4/edit?usp=sharing
      ```
 
-3. **Identify the Spreadsheet ID**:
-   - The **bolded** part of the URL between `/d/` and `/edit` is your Spreadsheet ID.
-   - In this example, the Spreadsheet ID is:
+3. **Identifikasi Spreadsheet ID**:
+   - Bagian **yang dicetak tebal** dari URL antara `/d/` dan `/edit` adalah Spreadsheet ID Anda.
+   - Dalam contoh ini, Spreadsheet ID-nya adalah:
      ```
      1SeTFM_Asd167ejmTpWM_Np19zbK0mI2rPBJfwN3L1wa4
-
+     ```
 
 ---
 
-# How to Add the Google Service Account as an Editor in Google Sheets
+# Cara Menambahkan Google Service Account sebagai Editor di Google Sheets
 
-To allow your Google Service Account to interact with a Google Sheets, you need to add it as an Editor. Here's how you can do it:
+Untuk memungkinkan Google Service Account Anda berinteraksi dengan Google Sheets, Anda perlu menambahkannya sebagai Editor. Berikut cara melakukannya:
 
-## Step-by-Step Guide
+## Panduan Langkah demi Langkah
 
-1. **Create or Obtain the Service Account Email**:
-   - If you haven't created a service account yet, follow the steps [[here]](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Service%20Account.md).
-   - The service account email typically looks something like `your-service-account@your-project-id.iam.gserviceaccount.com`.
+1. **Buat atau Dapatkan Email Service Account**:
+   - Jika Anda belum membuat service account, ikuti langkah-langkah [di sini](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Service%20Account.md).
+   - Email service account biasanya terlihat seperti `your-service-account@your-project-id.iam.gserviceaccount.com`.
 
-2. **Open the Google Sheets**:
-   - Go to [Google Sheets](https://docs.google.com/spreadsheets/) and open the spreadsheet you want to share.
+2. **Buka Google Sheets**:
+   - Buka [Google Sheets](https://docs.google.com/spreadsheets/) dan buka spreadsheet yang ingin Anda bagikan.
 
-3. **Open the Sharing Settings**:
-   - In the top-right corner of the spreadsheet, click the **Share** button.
+3. **Buka Pengaturan Berbagi**:
+   - Di sudut kanan atas spreadsheet, klik tombol **Share**.
 
-4. **Add the Service Account as an Editor**:
-   - In the "Share with people and groups" field, enter the service account email you obtained earlier.
-   - Click on the dropdown next to the email address and select **Editor**.
+4. **Tambahkan Service Account sebagai Editor**:
+   - Di bidang "Share with people and groups", masukkan email service account yang Anda dapatkan sebelumnya.
+   - Klik dropdown di sebelah alamat email dan pilih **Editor**.
 
-5. **Save the Changes**:
-   - Click **Send** or **Share** to grant the service account editing access to the spreadsheet.
+5. **Simpan Perubahan**:
+   - Klik **Send** atau **Share** untuk memberikan akses editor kepada service account di spreadsheet tersebut.
