@@ -1,3 +1,5 @@
+![ISBtoSheets](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/ISBtoSheets.png)
+
 # ISBtoSheets
 Impor data JSON ISB LKPP ke Google Sheets
 
