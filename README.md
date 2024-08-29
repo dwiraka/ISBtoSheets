@@ -6,7 +6,7 @@ Impor data JSON ISB LKPP ke Google Sheets
 ```
 a. Mempermudah proses rekap data
 
-b. Data terekap/tersimpan setiap hari nya dan dapat diakses kembal
+b. Data terekap/tersimpan setiap hari nya dan dapat diakses kembali melalui history google sheets
 
 c. Data mudah untuk diolah/disusun kembali sesuai kebutuhan
 ```
