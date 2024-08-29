@@ -2,6 +2,14 @@
 
 # ISBtoSheets
 Impor data JSON ISB LKPP ke Google Sheets
+ - Kegunaan
+```
+a. Mempermudah proses rekap data
+
+b. Data terekap/tersimpan setiap hari nya dan dapat diakses kembal
+
+c. Data mudah untuk diolah/disusun kembali sesuai kebutuhan
+```
 
 ## Persyaratan
 - [Akun Layanan Google](https://github.com/deniganda/ISBtoSheets/blob/main/Guide/Google%20Service%20Account.md) dengan Google Sheets API diaktifkan (file `credentials.json`).
