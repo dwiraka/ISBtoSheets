@@ -48,6 +48,7 @@ Untuk menyimpan dan menggunakan informasi sensitif dengan aman, atur GitHub Secr
 
 #### **Secrets Opsional untuk Kustomisasi:**
 - `API_URL_TS`: Tautan JSON dari SPSE-TenderSelesai.
+- `API_URL_TSN`: Tautan JSON dari SPSE-TenderSelesaiNilai.
 - `API_URL_TD`: Tautan JSON dari Bela-TokoDaringRealisasi.
 - `API_URL_SWA`: Tautan JSON dari RUP-PaketSwakelola-Terumumkan.
 - `API_URL_PS`: Tautan JSON dari SPSE-PencatatanSwakelola.
