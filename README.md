@@ -27,6 +27,7 @@ c. Data mudah untuk diolah/disusun kembali sesuai kebutuhan
 a. **Buat Sheet dengan Nama Berikut:**
 ``` 
         - Tender
+        - TenderNilai
         - NonTender
         - Pen NonTender
         - Pen Swakelola
