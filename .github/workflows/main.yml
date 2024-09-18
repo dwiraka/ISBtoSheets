@@ -77,6 +77,27 @@ jobs:
         API_URL_EP: ${{ secrets.API_URL_EP }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
 
+    - name: Run E-Purchasing Produk Detail Node.js script
+      run: node E-Purchasing_ProD.js  # Replace with the path to your second script
+      env:
+        GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
+        API_URL_EP: ${{ secrets.API_URL_EP_PROD }}
+        SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        
+    - name: Run E-Purchasing Penyedia Detail Node.js script
+      run: node E-Purchasing_PenD.js  # Replace with the path to your second script
+      env:
+        GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
+        API_URL_EP: ${{ secrets.API_URL_EP_PEND }}
+        SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        
+    - name: Run E-Purchasing Komoditas Detail Node.js script
+      run: node E-Purchasing_KomD.js  # Replace with the path to your second script
+      env:
+        GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
+        API_URL_EP: ${{ secrets.API_URL_EP_KOMD }}
+        SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+
     - name: Run TokoDaring Node.js script
       run: node TokoDaring.js  # Replace with the path to your second script
       env:
