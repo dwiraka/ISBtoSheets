@@ -54,7 +54,7 @@ async function fetchParameters() {
 async function fetchData() {
     try {
         const parameters = await fetchParameters();
-        const apiUrl = process.env.API_URL_EP_KOND; // Use the environment variable
+        const apiUrl = process.env.API_URL_EP_KOMD; // Use the environment variable
 
         const allDataPromises = parameters.map(async (param, index) => {
             const url = `${apiUrl}${param}`; // Construct the URL using the environment variable
