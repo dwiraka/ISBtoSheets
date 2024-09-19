@@ -120,7 +120,7 @@ jobs:
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
         
     - name: Run E-Purchasing User PPK Detail Node.js script
-      run: node E-Purchasing_PPK.js  # Replace with the path to your second script
+      run: node E-Purchasing_UserPPK.js  # Replace with the path to your second script
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_EP_USERPP: ${{ secrets.API_URL_EP_USERPPK }}

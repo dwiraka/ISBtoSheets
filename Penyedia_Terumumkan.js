@@ -1,5 +1,6 @@
 const axios = require('axios');
 const { google } = require('googleapis');
+const TelegramBot = require('node-telegram-bot-api');
 
 // Parse the JSON key from the environment variable
 const keyJson = JSON.parse(process.env.GOOGLE_SHEET_KEY_JSON);
@@ -18,6 +19,11 @@ const url = process.env.API_URL_PEN; // Use environment variable for URL
 const spreadsheetId = process.env.SPREADSHEET_ID; // Use environment variable for Spreadsheet ID
 const clearRange = 'Penyedia!A:ZZ'; // Range to clear
 const updateRange = 'Penyedia!A1'; // Range to update
+
+// Telegram Bot setup
+const botToken = process.env.TELEGRAM_BOT_TOKEN; // Telegram bot token
+const chatId = process.env.TELEGRAM_CHAT_ID; // Telegram chat ID where messages will be sent
+const bot = new TelegramBot(botToken, { polling: false }); // Set polling to false as we are just sending messages
 
 async function fetchData() {
     try {
