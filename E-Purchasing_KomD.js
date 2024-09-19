@@ -116,7 +116,7 @@ async function fetchData() {
 
 
         // Log success message to Telegram
-        const successMessage = '✅ Data successfully written to Google Sheets';
+        const successMessage = '✅ Data Komoditas Detail successfully written to Google Sheets';
         console.log(successMessage);
         await sendTelegramMessage(`<b>Success:</b> ${successMessage}`);
 
