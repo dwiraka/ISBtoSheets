@@ -65,7 +65,7 @@ async function fetchData() {
         console.log('Data successfully written to Google Sheets', result.data);
 
         // Send success message to Telegram
-        const successMessage = `✅ Data successfully written to Google Sheets. Updated rows: ${rows.length}`;
+        const successMessage = `✅ Data E-Purchasing successfully written to Google Sheets. Updated rows: ${rows.length}`;
         await bot.sendMessage(chatId, successMessage);
     } catch (error) {
         console.error('Error:', error.response ? error.response.data : error.message);
