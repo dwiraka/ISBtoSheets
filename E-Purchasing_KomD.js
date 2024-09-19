@@ -14,7 +14,7 @@ const sheets = google.sheets({ version: 'v4', auth });
 // Define the spreadsheet ID and range for fetching parameters
 const spreadsheetId = process.env.SPREADSHEET_ID; // Use environment variable for Spreadsheet ID
 const parametersRange = 'E-Purchasing!M2:M'; 
-const clearRange = 'E-Purchasing!DA:ZZ'; 
+const clearRange = 'E-Purchasing!DA:DE'; 
 const updateRange = 'E-Purchasing!DA1'; 
 
 // Remove duplicate entries based on identical key-value pairs
