@@ -45,6 +45,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_IS: ${{ secrets.API_URL_IS }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
 
     - name: Run Tender Selesai Node.js script
       run: node Tender_Selesai.js  # Replace with the path to your first script
@@ -52,6 +54,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_TS: ${{ secrets.API_URL_TS }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
 
     - name: Run Tender Selesai Nilai Node.js script
       run: node Tender_Selesai_Nilai.js  # Replace with the path to your first script
@@ -59,6 +63,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_TS: ${{ secrets.API_URL_TSN }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
         
     - name: Run Non Tender Selesai Node.js script
       run: node NonTender_Selesai.js  # Replace with the path to your second script
@@ -66,6 +72,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_NTS: ${{ secrets.API_URL_NTS }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
 
     - name: Run Pencatatan Non Tender Node.js script
       run: node Pencatatan_NonTender.js  # Replace with the path to your second script
@@ -73,6 +81,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_PNT: ${{ secrets.API_URL_PNT }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
 
     - name: Run Pencatatan Swakelola Node.js script
       run: node Pencatatan_Swakelola.js  # Replace with the path to your second script
@@ -80,6 +90,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_PS: ${{ secrets.API_URL_PS }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
 
     - name: Run E-Purchasing Node.js script
       run: node E-Purchasing.js  # Replace with the path to your second script
@@ -96,6 +108,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_EP_PROD: ${{ secrets.API_URL_EP_PROD }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
         
     - name: Run E-Purchasing Penyedia Detail Node.js script
       run: node E-Purchasing_PenD.js  # Replace with the path to your second script
@@ -103,6 +117,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_EP_PEND: ${{ secrets.API_URL_EP_PEND }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
         
     - name: Run E-Purchasing Komoditas Detail Node.js script
       run: node E-Purchasing_KomD.js  # Replace with the path to your second script
@@ -110,6 +126,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_EP_KOMD: ${{ secrets.API_URL_EP_KOMD }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
         
     - name: Run E-Purchasing Distributor Detail Node.js script
       run: node E-Purchasing_DisD.js  # Replace with the path to your second script
@@ -117,6 +135,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_EP_DISD: ${{ secrets.API_URL_EP_DISD }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
         
     - name: Run E-Purchasing User PP Detail Node.js script
       run: node E-Purchasing_UserPP.js  # Replace with the path to your second script
@@ -124,6 +144,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_EP_USERPP: ${{ secrets.API_URL_EP_USERPP }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
         
     - name: Run E-Purchasing User PPK Detail Node.js script
       run: node E-Purchasing_PPK.js  # Replace with the path to your second script
@@ -131,6 +153,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_EP_USERPP: ${{ secrets.API_URL_EP_USERPPK }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
 
     - name: Run TokoDaring Node.js script
       run: node TokoDaring.js  # Replace with the path to your second script
@@ -138,3 +162,5 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_TD: ${{ secrets.API_URL_TD }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID

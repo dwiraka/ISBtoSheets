@@ -1,5 +1,6 @@
 const axios = require('axios');
 const { google } = require('googleapis');
+const TelegramBot = require('node-telegram-bot-api');
 
 // Load and parse the JSON key from the environment variable
 const keyJson = JSON.parse(process.env.GOOGLE_SHEET_KEY_JSON);
@@ -16,6 +17,22 @@ const spreadsheetId = process.env.SPREADSHEET_ID; // Use environment variable fo
 const parametersRange = 'E-Purchasing!Y2:Y'; 
 const clearRange = 'E-Purchasing!DX:ZZ'; 
 const updateRange = 'E-Purchasing!DX1'; 
+
+// Telegram bot setup
+const telegramBotToken = process.env.TELEGRAM_BOT_TOKEN;
+const telegramChatId = process.env.TELEGRAM_CHAT_ID;
+
+// Initialize TelegramBot instance
+const bot = new TelegramBot(telegramBotToken, { polling: false });
+
+// Function to send a message to the Telegram bot
+async function sendTelegramMessage(message) {
+    try {
+        await bot.sendMessage(telegramChatId, message, { parse_mode: 'HTML' });
+    } catch (error) {
+        console.error('Error sending message to Telegram:', error.message);
+    }
+}
 
 // Remove duplicate entries based on identical key-value pairs
 function removeDuplicates(data) {
@@ -97,9 +114,15 @@ async function fetchData() {
             resource,
         });
 
-        console.log('Data successfully written to Google Sheets', result.data);
+        // Log success message to Telegram
+        const successMessage = '✅ Data successfully written to Google Sheets';
+        console.log(successMessage);
+        await sendTelegramMessage(`<b>Success:</b> ${successMessage}`);
+
     } catch (error) {
-        console.error('Error:', error.response ? error.response.data : error.message);
+        const errorMessage = `❌ Error: ${error.response ? error.response.data : error.message}`;
+        console.error(errorMessage);
+        await sendTelegramMessage(`<b>Error:</b> ${errorMessage}`);
     }
 }
 
