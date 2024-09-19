@@ -21,19 +21,24 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run Penyedia Node.js script
-      run: node Penyedia_Terumumkan.js  # Replace with the path to your first script
+       - name: Run Penyedia Node.js script
+      run: node Penyedia_Terumumkan.js  # Replace with the path to your script
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_PEN: ${{ secrets.API_URL_PEN }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
 
     - name: Run Swakelola Node.js script
-      run: node Swakelola_Terumumkan.js  # Replace with the path to your first script
+      run: node Swakelola_Terumumkan.js  # Replace with the path to your script
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_SWA: ${{ secrets.API_URL_SWA }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
+
 
     - name: Run Instansi Satker Node.js script
       run: node InstansiSatker.js  # Replace with the path to your first script
@@ -83,6 +88,8 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_EP: ${{ secrets.API_URL_EP }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}  # Add if needed
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}  # Add Telegram Bot token
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}  # Add Telegram Chat ID
 
     - name: Run E-Purchasing Produk Detail Node.js script
       run: node E-Purchasing_ProD.js  # Replace with the path to your second script
