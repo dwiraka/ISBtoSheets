@@ -2,7 +2,7 @@ name: Daily Node.js Script
 
 on:
   schedule:
-    - cron: '0 0,2,4,6,8,10,12,14,16 * * *'  # Every 2 hours from 7 AM to 4 PM GMT+7 (Asia/Jakarta)
+  - cron: '0 0,2,4,6,8 * * *'  # Every 2 hours from 12 AM to 8 AM UTC
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
