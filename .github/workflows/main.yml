@@ -32,28 +32,28 @@ jobs:
       run: node Penyedia_Terumumkan_TahunBaru.js
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
-        API_URL_PEN: ${{ secrets.API_URL_PENBR }}
+        API_URL_PEN: 'https://isb.lkpp.go.id/isb-2/api/63e238a3-3b49-4a1c-9f19-2f939a7624c6/json/23546/RUP-PaketPenyedia-Terumumkan/tipe/4:12/parameter/2025:D27'
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
 
     - name: Run Swakelola Node.js script
       run: node Swakelola_Terumumkan.js
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
-        API_URL_SWA: ${{ secrets.API_URL_SWA }}
+        API_URL_SWA: 'https://isb.lkpp.go.id/isb-2/api/a2450e70-239e-4e8f-a448-f41ab2a3c87d/json/23522/RUP-PaketSwakelola-Terumumkan/tipe/4:12/parameter/2025:D27'
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
 
     - name: Run Instansi Satker Node.js script
       run: node InstansiSatker.js
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
-        API_URL_IS: ${{ secrets.API_URL_IS }}
+        API_URL_IS: 'https://isb.lkpp.go.id/isb-2/api/b52eb8ff-53f8-4053-b072-cd651658caea/json/23514/RUP-MasterSatker/tipe/12:12/parameter/D27:2025'
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
 
     - name: Run Tender Selesai Node.js script
       run: node Tender_Selesai.js
       env:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
-        API_URL_TS: ${{ secrets.API_URL_TS }}
+        API_URL_TS: 'https://isb.lkpp.go.id/isb-2/api/8c0d2885-dd7f-43d2-83d5-3460d06f86d5/json/23548/SPSE-TenderSelesai/tipe/4:4/parameter/2025:17'
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
 
     - name: Run Tender Selesai Nilai Node.js script
